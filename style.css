@@ -181,6 +181,10 @@ header {
     margin: 5px auto;
 }
 
+.quebra-mobile {
+    display: none;
+}
+
 @media (max-width: 768px) {
 
     * {
@@ -201,7 +205,6 @@ header {
         min-width: 0;
         overflow: hidden;
         padding: 15px;
-        box-sizing: border-box;
     }
 
     #nome {
@@ -221,8 +224,13 @@ header {
         line-height: 1.4;
         padding: 0 5px;
         text-align: center;
-        overflow-wrap: break-word;
     }
+
+
+    .quebra-mobile {
+        display: inline;
+    }
+
 
     .apresentacao {
         width: calc(100% - 30px);
@@ -256,10 +264,6 @@ header {
         max-width: 100%;
     }
 
-    .button-container span {
-        display: none;
-    }
-
 
     section {
         width: calc(100% - 30px);
@@ -285,7 +289,6 @@ header {
     section ul {
         padding-left: 20px;
     }
-
 
     a {
         overflow-wrap: break-word;
