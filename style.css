@@ -264,6 +264,9 @@ header {
         max-width: 100%;
     }
 
+    .linha {
+        width: min(423.5px, 90%);
+    }
 
     section {
         width: calc(100% - 30px);
